@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(122, 122, 232);
+    padding: 10px;
+}
+
+.main-todo-box{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+
+}
+
+.main-todo-box h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-todo-box h2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row-of-search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(227, 223, 223, 0.45);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+
+#input-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(255, 62, 62);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(imgs/32463.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+/* ul li.checked{
+    color: rgb(109, 107, 107);
+    text-decoration: line-through;
+} */
+
+ul li.checked::before{
+    background-image: url(imgs/Eo_circle_green_white_checkmark.svg.png);
+}
+
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background-color: brown;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search input{
+    background: rgb(243, 235, 235);
+    height: 30px;
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.search i{
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: -100px;
+    font-size: 20px;
+}
